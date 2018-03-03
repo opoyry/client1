@@ -18,6 +18,9 @@ window.addEventListener("load", function () {
             "allow": "Get email<br/>with link to<br/>preferences", // link to<br/>preferences to<br/>your email",
             "dismiss": 'Continue<br/>anonymously'
         },
+        "cookie" : {
+            "domain": "gravito1.github.io"
+        },
         "revokeBtn": "<div class=\"cc-revoke {{classes}}\">Preference settings</div>"
     })
 });
