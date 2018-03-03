@@ -13,10 +13,27 @@
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="https://gravitoapp2.azurewebsites.net/gravito1.js"></script>
 
+    <!--
     <script src="https://gravitoapp2.azurewebsites.net/api/cookie2"></script>
-
+    -->
     <script>
+/*
+    alert('Local value ' + localStorage.getItem("gravitoId"));
     alert(cookieValue);
+    localStorage.setItem("gravitoId", cookieValue);
+*/
+
+window.onload = function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    // http://localhost:65320/api/cookie2?value=asdf
+    s.src = 'https://gravitoapp2.azurewebsites.net/api/cookie2?value=' + localStorage.getItem("gravitoId");
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+
+}
+    
     </script>
 </head>
 
