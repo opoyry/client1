@@ -45,6 +45,11 @@
 
         }
 
+        gtag(function(tracker) {
+            var clientId = tracker.get('clientId');
+            alert('GA Client id ' + clientId);
+        });
+
     </script>
 </head>
 
