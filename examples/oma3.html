@@ -43,10 +43,12 @@
             var x = document.getElementsByTagName('script')[0];
             x.parentNode.insertBefore(s, x);
 
+            //var clientId= gtag.getAll()[0].get('clientId');
+            //alert('GA Client id ' + clientId);
         }
 
         gtag(function(tracker) {
-            var clientId = tracker.get('clientId');
+             clientId = tracker.get('clientId');
             alert('GA Client id ' + clientId);
         });
 
